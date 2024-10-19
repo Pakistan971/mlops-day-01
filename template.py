@@ -4,6 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
+#listing all the required files and folders
 list_of_files =  [
     ".github/workflows/.gitkeep",
     "src/__init__.py",
@@ -35,6 +36,7 @@ list_of_files =  [
     "experiment/experiments.ipynb"
 ]
 
+#creating the files and folders
 for filepath in list_of_files:
     filepath = Path(filepath)
     filedir,filename = os.path.split(filepath)
@@ -45,3 +47,4 @@ for filepath in list_of_files:
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
         with open(filepath,"w") as f:
             pass
+
