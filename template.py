@@ -15,7 +15,7 @@ list_of_files =  [
     "src/components/moel_evaluation.py",
 
     "src/logger/logging.py",
-    "src/exception/exception",
+    "src/exception/exception.py",
 
     "src/pipeline/__init__.py",
     "src/pipeline/training_pipeline.py",
